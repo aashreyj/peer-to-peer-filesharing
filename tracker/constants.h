@@ -1,0 +1,5 @@
+#pragma once
+
+#define MAX_THREADS 50
+#define ARGS_BUFFER_SIZE 32768
+#define FILE_PIECE_SIZE 524288
