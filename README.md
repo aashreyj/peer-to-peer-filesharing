@@ -1,10 +1,10 @@
 <H1 style="text-align: center;"> CS3.304: Advanced Operating Systems </H1>
-<H3 style="text-align: center;"> Assignment 3: Peer-to-Peer File Sharing </H3>
+<H3 style="text-align: center;"> Peer-to-Peer File Sharing </H3>
 
 
 ### Description
 
-This assignment is an implementation of a peer-to-peer distributed filesystem using group-based tracker and peers architecture. The following commands, when executed from the client, are currently supported:
+This project is an implementation of a peer-to-peer distributed filesystem using group-based tracker and peers architecture. The following commands, when executed from the client, are currently supported:
 
 ```
 1. create_user <user_id> <password>
@@ -27,24 +27,24 @@ This assignment is an implementation of a peer-to-peer distributed filesystem us
 
 1. Compile the source code using the Makefile:
     ```
-    aashrjai@aashrey-tuf: ~/<path>/20224202012_A3$ make
+    $ make
     ```
 
 2. Create the `tracker_info.txt` file containing the socket details for the tracker:
     ```
-    aashrjai@aashrey-tuf: ~/<path>/20224202012_A3$ vi tracker_info.txt
-    aashrjai@aashrey-tuf: ~/<path>/20224202012_A3$ cat tracker_info.txt
+    $ vi tracker_info.txt
+    $ cat tracker_info.txt
     127.0.0.1:5000
     ```
 
 3. Start the tracker:
     ```
-    aashrjai@aashrey-tuf: ~/<path>/20224202012_A3$ ./tracker.out tracker_info.txt <tracker_index>
+    $ ./tracker.out tracker_info.txt <tracker_index>
     ```
 
 4. Start the client/peer:
     ```
-    aashrjai@aashrey-tuf: ~/<path>/20224202012_A3$ ./client.out <IP>:<PORT> tracker_info.txt
+    $ ./client.out <IP>:<PORT> tracker_info.txt
     ```
 
 5. Start executing commands from the client!
